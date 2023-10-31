@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
+import AuthProvider from "./contexts/auth.context.jsx";
 import ActiveGames from "./pages/ActiveGames.jsx";
 import Admin from "./Admin.jsx";
 import CreateGame from "./pages/admin/CreateGame.jsx";
@@ -72,6 +73,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <AuthProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </AuthProvider>
   </React.StrictMode>
 );
