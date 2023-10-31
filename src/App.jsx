@@ -24,6 +24,18 @@ function App() {
         </ul>
       </nav>
       <Outlet></Outlet>
+      <footer>
+        <ul>
+          <li>
+            <a
+              href="https://www.flaticon.com/free-icons/basketball"
+              title="basketball icons"
+            >
+              Basketball icons created by Freepik - Flaticon
+            </a>
+          </li>
+        </ul>
+      </footer>
     </>
   );
 }

@@ -1,0 +1,8 @@
+article.active {
+  border: 10px dashed rgb(144, 33, 203);
+}
+article {
+  margin-bottom: 30px;
+  border: 10px dashed saddlebrown;
+  padding: 10px;
+}
